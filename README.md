@@ -11,6 +11,11 @@
 npm install
 ```
 
+### Run Server
+```bash
+tsx watch src/server.ts
+```
+
 ### Create Tables 
 ```bash
 npx prisma migrate dev
@@ -21,5 +26,4 @@ npx prisma migrate dev
 ```bash
 npx prisma studio
 ```
-
-Parada: 45m
+* Após a execução do comando acima, acesse o Prisma Studio através do endereço [http://localhost:5555](http://localhost:5555) 
