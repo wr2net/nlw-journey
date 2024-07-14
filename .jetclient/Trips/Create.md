@@ -14,7 +14,7 @@ type = 'JSON'
 raw = '''
 {
   "destination": "Curitiba",
-  "starts_at": "2024-07-11 23:00:00",
+  "starts_at": "2024-07-14 23:00:00",
   "ends_at": "2024-07-31 00:00:00",
   "owner_name": "Wagner Rigoli da Rosa",
   "owner_email": "wagnerr2@gmail.com",
