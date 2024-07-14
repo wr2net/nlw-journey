@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "2d4f35b5-79c9-4e10-b7d4-54dc5edadede",
+		"name": "Activities",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2118747"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Lunch\",\n  \"occurs_at\": \"2024-07-15 12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}:{{port}}/trips/{{trip_id}}/activities",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"trips",
+						"{{trip_id}}",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}:{{port}}/trips/{{trip_id}}/activities",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"trips",
+						"{{trip_id}}",
+						"activities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

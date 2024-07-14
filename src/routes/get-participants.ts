@@ -4,8 +4,8 @@ import { z } from "zod";
 import {prisma} from "../lib/prisma";
 import {ClientError} from "../errors/client-error";
 
-export async function getLinks(app: FastifyInstance) {
-	app.withTypeProvider<ZodTypeProvider>().get('/trips/:tripId/links', {
+export async function getParticipants(app: FastifyInstance) {
+	app.withTypeProvider<ZodTypeProvider>().get('/participants/:tripId', {
 		schema: {
 			params: z.object({
 				tripId: z.string().uuid(),
@@ -19,7 +19,7 @@ export async function getLinks(app: FastifyInstance) {
 				id: tripId,
 			},
 			include: {
-				links: true,
+				participants: true,
 			}
 		})
 
@@ -27,6 +27,6 @@ export async function getLinks(app: FastifyInstance) {
 			throw new ClientError('Trip not found.')
 		}
 
-		return { links: trip.links }
+		return { links: trip.participants }
 	})
 }

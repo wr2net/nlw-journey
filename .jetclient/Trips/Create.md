@@ -2,8 +2,8 @@
 name = 'Create'
 method = 'POST'
 url = 'http://localhost:3333/trips'
-sortWeight = 1000000
-id = 'c9a4ece7-02f8-4712-bbef-2628d0063585'
+sortWeight = 5000000
+id = 'f2245e62-d9cf-454f-83e4-1a8a6e639cd5'
 
 [[headers]]
 key = 'Content-Type'
@@ -13,7 +13,7 @@ value = 'application/json'
 type = 'JSON'
 raw = '''
 {
-  "destination": "Curitiba",
+  "destination": "São José",
   "starts_at": "2024-07-14 23:00:00",
   "ends_at": "2024-07-31 00:00:00",
   "owner_name": "Wagner Rigoli da Rosa",
